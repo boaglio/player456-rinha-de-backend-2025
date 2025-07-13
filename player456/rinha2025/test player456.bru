@@ -1,0 +1,18 @@
+meta {
+  name: test player456
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:9999/payments
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "correlationId": "4a7901b8-7d26-4d9d-aa19-4dc1c7cf60a0",
+    "amount": 342.56
+  }
+}

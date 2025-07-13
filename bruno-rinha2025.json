@@ -1,0 +1,293 @@
+{
+  "name": "rinha2025",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "test payment default",
+      "seq": 1,
+      "request": {
+        "url": "http://localhost:8001/payments",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n    \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b7\",\n    \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "test player456",
+      "seq": 6,
+      "request": {
+        "url": "http://localhost:9999/payments",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60a0\",\n  \"amount\": 342.56\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "test payment fallback",
+      "seq": 4,
+      "request": {
+        "url": "http://localhost:8002/payments",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n    \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3\",\n    \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "test payment default health",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:8001/payments/service-health",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n  \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3\",\n  \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "test payment failback health",
+      "seq": 5,
+      "request": {
+        "url": "http://localhost:8002/payments/service-health",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n  \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3\",\n  \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get payments",
+      "seq": 7,
+      "request": {
+        "url": "http://localhost:9999/pagamentos",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n  \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3\",\n  \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get payments fallback",
+      "seq": 8,
+      "request": {
+        "url": "http://localhost:9999/pagamentos-fallback",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n  \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3\",\n  \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get payments summary",
+      "seq": 9,
+      "request": {
+        "url": "http://localhost:9999/payments-summary?from=2025-07-09T13:48:36.5418Z&to=2025-08-12T13:48:36.54181Z",
+        "method": "GET",
+        "headers": [],
+        "params": [
+          {
+            "name": "from",
+            "value": "2025-07-09T13:48:36.5418Z",
+            "type": "query",
+            "enabled": true
+          },
+          {
+            "name": "to",
+            "value": "2025-08-12T13:48:36.54181Z",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "none",
+          "json": "{\n  \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3\",\n  \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "test db purge payment default",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:8001/admin/purge-payments",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n    \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b7\",\n    \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get payments retry count",
+      "seq": 11,
+      "request": {
+        "url": "http://localhost:9999/pagamentos-retry-count",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n  \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3\",\n  \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get payments retry",
+      "seq": 12,
+      "request": {
+        "url": "http://localhost:9999/pagamentos-retry",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n  \"correlationId\": \"4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3\",\n  \"amount\": 19.90\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "rinha2025",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}

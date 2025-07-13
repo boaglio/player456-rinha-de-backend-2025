@@ -1,0 +1,24 @@
+spring:
+  application:
+   name: player456
+  datasource:
+   url: jdbc:postgresql://localhost:5432/rinha2025
+   username: admin
+   password: rinha
+   driver-class-name: org.postgresql.Driver
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSSZ
+    locale: en_US
+  serialization:
+    write-dates-as-timestamps: false
+  threads:
+    virtual:
+      enabled: true
+
+payment:
+  default: ${PAYMENT_DEFAULT_SERVER:http://localhost:8001}
+  fallback: ${PAYMENT_FALLBACK_SERVER:http://localhost:8002}
+
+server:
+#  port: 8456
+  port: 9999

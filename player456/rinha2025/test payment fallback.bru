@@ -1,0 +1,18 @@
+meta {
+  name: test payment fallback
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8002/payments
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "correlationId": "4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3",
+      "amount": 19.90
+  }
+}
