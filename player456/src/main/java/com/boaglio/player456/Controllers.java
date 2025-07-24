@@ -5,13 +5,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
 import java.util.List;
 
 import static com.boaglio.player456.LogUtil.log;
 
 @RestController
 public class Controllers {
+
+    static int calls = 1 ;
 
     private final PaymentService paymentService;
 
@@ -23,7 +24,6 @@ public class Controllers {
     public ResponseEntity<Void>  fazPagamento(@RequestBody Payment payment) {
 
 //        log(payment.toString());
-
 //        TimerUtil timer = new TimerUtil();
         paymentService.processaPagamento(payment.correlationId(),String.valueOf(payment.amount()));
 //        timer.logElapsedTime("Payment Service");
@@ -39,7 +39,7 @@ public class Controllers {
         if (from.isAfter(to)) {
             throw new IllegalArgumentException("'from' date must be before 'to' date");
         }
-        log("Payments Summary - from:%s to:%s".formatted(from,to));
+        log("%d - Payments Summary - from:%s to:%s".formatted(calls,from,to));
 
         var timer = new TimerUtil();
         PaymentSummary summary = paymentService.getSummary(from, to);
@@ -59,7 +59,7 @@ public class Controllers {
 
         timer.logElapsedTime("Payment Summary");
 
-        log("Payments Summary Response - %s".formatted(responseSummary));
+        log("%d - Payments Summary Response - %s".formatted(calls++,responseSummary));
 
         return ResponseEntity.ok(responseSummary);
     }

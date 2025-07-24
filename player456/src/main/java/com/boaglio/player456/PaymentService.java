@@ -3,24 +3,23 @@ package com.boaglio.player456;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
 import java.net.URI;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.Objects;
 
 import static com.boaglio.player456.LogUtil.*;
+import static com.boaglio.player456.Player456Application.*;
 
 @Service
 public class PaymentService {
 
     public enum PAYMENT_SERVER { DEFAULT , FALLBACK}
-
-    private static final int TIMEOUT_IN_MS = 200;
 
     @Value("${payment.default}")
     private String paymentDefaultServer;
@@ -32,12 +31,13 @@ public class PaymentService {
     private final RestClient restClientPaymentDefault;
     private final RestClient restClientPaymentFallback;
 
-    public PaymentService(PaymentRepository paymentRepository, RestClient.Builder restClientBuilder) {
+    public PaymentService(PaymentRedisRepository paymentRepository, RestClient.Builder restClientBuilder) {
         this.paymentRepository = paymentRepository;
-        this.restClientPaymentDefault = restClientBuilder.requestFactory(new HttpClientRequestFactory(Duration.ofMillis(TIMEOUT_IN_MS))).build();
-        this.restClientPaymentFallback = restClientBuilder.requestFactory(new HttpClientRequestFactory(Duration.ofMillis(TIMEOUT_IN_MS))).build();
+        this.restClientPaymentDefault = restClientBuilder.requestFactory(new HttpClientRequestFactory(Duration.ofMillis(SERVICE_TIMEOUT_DEFAULT_IN_MS))).build();
+        this.restClientPaymentFallback = restClientBuilder.requestFactory(new HttpClientRequestFactory(Duration.ofMillis(SERVICE_TIMEOUT_FALLBACK_IN_MS))).build();
     }
 
+    @Async
     public void processaPagamento(String correlationId, String amount) {
 
         // Create JSON request body
@@ -70,7 +70,7 @@ public class PaymentService {
 
         if (response.getStatusCode().is2xxSuccessful()) {
 
-            var resp = response.getBody();
+       //     var resp = response.getBody();
       //      log("Default server response: %s".formatted(resp));
 //            TimerUtil timer = new TimerUtil();
             paymentRepository.addDefaultPayment(amount);
@@ -101,7 +101,7 @@ public class PaymentService {
             if (Objects.nonNull(responseFallback) &&
                 Objects.nonNull(responseFallback.getStatusCode()) &&
                     responseFallback.getStatusCode().is2xxSuccessful()) {
-                var resp = responseFallback.getBody();
+//                var resp = responseFallback.getBody();
 //                log("Fallback server response: %s".formatted(resp));
 //                TimerUtil timer = new TimerUtil();
                 paymentRepository.addFallbackPayment(amount);
