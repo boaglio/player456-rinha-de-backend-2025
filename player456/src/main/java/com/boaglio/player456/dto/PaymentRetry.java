@@ -1,4 +1,4 @@
-package com.boaglio.player456;
+package com.boaglio.player456.dto;
 
 public record PaymentRetry(
     long id,

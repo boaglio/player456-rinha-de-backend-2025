@@ -1,13 +1,20 @@
 package com.boaglio.player456;
 
+import com.boaglio.player456.dto.Payment;
+import com.boaglio.player456.dto.PaymentRecord;
+import com.boaglio.player456.dto.PaymentSummary;
+import com.boaglio.player456.util.TimerUtil;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Mono;
+import reactor.netty.FutureMono;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static com.boaglio.player456.LogUtil.log;
+import static com.boaglio.player456.util.LogUtil.log;
 
 @RestController
 public class Controllers {
@@ -21,14 +28,19 @@ public class Controllers {
     }
 
     @PostMapping("/payments")
-    public ResponseEntity<Void>  fazPagamento(@RequestBody Payment payment) {
+    public Mono<ResponseEntity<Void>> fazPagamento(@RequestBody Payment paymentRequest) {
 
-//        log(payment.toString());
-//        TimerUtil timer = new TimerUtil();
-        paymentService.processaPagamento(payment.correlationId(),String.valueOf(payment.amount()));
-//        timer.logElapsedTime("Payment Service");
-
-        return ResponseEntity.ok().build();
+        return FutureMono.just(paymentRequest)
+                .map(payment ->
+                        paymentService.processaPagamento(
+                                payment.correlationId(),
+                                String.valueOf(payment.amount())
+                        )
+                )
+                .then(Mono.just(ResponseEntity.ok().<Void>build()))
+                .onErrorResume(e -> {
+                        return Mono.just(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build());
+                });
     }
 
     @GetMapping("/payments-summary")
@@ -76,22 +88,27 @@ public class Controllers {
         return ResponseEntity.ok(records);
     }
 
-    @GetMapping("/pagamentos-retry-count")
-    public ResponseEntity<Long> getCountRetryPagamentos() {
-        var count = paymentService.getCountRetryPagamentos();
-        return ResponseEntity.ok(count);
+    @GetMapping("/health")
+    public ResponseEntity<String> health() {
+        return ResponseEntity.ok("UP");
     }
-
-    @GetMapping("/pagamentos-retry")
-    public ResponseEntity<List<PaymentRetry>> getRetryPagamentos() {
-        var count = paymentService.getAllPagamentosRetry();
-        return ResponseEntity.ok(count);
-    }
-
-    @DeleteMapping("/pagamentos-retry")
-    public ResponseEntity<Long> truncateRetryPagamentos() {
-        paymentService.truncateRetryPagamentos();
-        return ResponseEntity.ok().build();
-    }
+//
+//    @GetMapping("/pagamentos-retry-count")
+//    public ResponseEntity<Long> getCountRetryPagamentos() {
+//        var count = paymentService.getCountRetryPagamentos();
+//        return ResponseEntity.ok(count);
+//    }
+//
+//    @GetMapping("/pagamentos-retry")
+//    public ResponseEntity<List<PaymentRetry>> getRetryPagamentos() {
+//        var count = paymentService.getAllPagamentosRetry();
+//        return ResponseEntity.ok(count);
+//    }
+//
+//    @DeleteMapping("/pagamentos-retry")
+//    public ResponseEntity<Long> truncateRetryPagamentos() {
+//        paymentService.truncateRetryPagamentos();
+//        return ResponseEntity.ok().build();
+//    }
 
 }

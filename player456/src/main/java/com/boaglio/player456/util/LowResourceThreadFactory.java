@@ -1,4 +1,4 @@
-package com.boaglio.player456;
+package com.boaglio.player456.util;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;

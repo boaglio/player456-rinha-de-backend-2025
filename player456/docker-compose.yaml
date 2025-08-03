@@ -1,7 +1,7 @@
 name: 'rinha-de-backend-3'
 
 #  1.5 CPUs = 0.2 PostgreSQL/Redis + 2 x 0.55 Spring Boot (1.10)+ 0.2 NGinx
-#   350  MB =  30 PostgreSQL/Redis + 2 x  150 Spring Boot (310) +  20 NGinx
+#   350  MB =  30 PostgreSQL/Redis + 2 x  146 Spring Boot (292) +  28 NGinx
 
 services:
 
@@ -10,8 +10,14 @@ services:
     image: redis:7.2-alpine
     container_name: javinha-redis
     hostname: javinha-redis
-    environment:
-      - REDIS_PASSWORD=rinha
+    command: >
+      redis-server
+      --save ""
+      --appendonly no
+      --maxmemory 30mb
+      --maxmemory-policy allkeys-lru
+#    environment:
+#      - REDIS_PASSWORD=rinha
     deploy:
       resources:
         limits:
@@ -20,9 +26,9 @@ services:
     networks:
       - back-end
     healthcheck:
-      test: ["CMD", "redis-cli", "-a", "rinha", "ping"]
-      interval: 5s
-      timeout: 5s
+      test: ["CMD", "redis-cli", "-a", "rinha", "--no-auth-warning", "ping"]
+      interval: 10s  # Reduce frequency
+      timeout: 1s    # Faster failure detection
       retries: 20
       start_period: 10s
 
@@ -38,13 +44,24 @@ services:
     environment:
       - ENABLE_SCHEDULING=true
       - SERVER_PORT=8081
-#     - DB_URL=jdbc:postgresql://javinha-db:5432/rinha2025
       - REDIS_SERVER=javinha-redis
       - REDIS_PASSWORD=rinha
       - REDIS_PORT=6379
       - PAYMENT_DEFAULT_SERVER=http://payment-processor-default:8080
       - PAYMENT_FALLBACK_SERVER=http://payment-processor-fallback:8080
-      - JAVA_TOOL_OPTIONS=-Xmx120m -Xms50m -XX:+UseSerialGC -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40 -XX:NewRatio=3 -XX:+UseStringDeduplication -XX:MaxMetaspaceSize=30m -XX:CompressedClassSpaceSize=8m -XX:+DisableExplicitGC -Djava.util.concurrent.ForkJoinPool.common.parallelism=2
+      - JAVA_OPTS= >-
+        -XX:+UseContainerSupport
+        -XX:MaxRAMPercentage=70.0
+        -XX:InitialRAMPercentage=70.0
+        -XX:MaxMetaspaceSize=32m
+        -Xss256k
+        -XX:+UseSerialGC
+        -XX:+UseFastAccessorMethods
+        -XX:+DisableExplicitGC
+        -XX:-PrintGC
+        -XX:-PrintGCDetails
+        -XX:-FlightRecorder
+        -Xlog:disable
     depends_on:
       javinha-redis:
         condition: service_healthy
@@ -56,7 +73,13 @@ services:
       resources:
         limits:
           cpus: "0.55"
-          memory: "150MB"
+          memory: "146MB"
+    healthcheck:
+      test: "curl --fail --silent localhost:8081/health | grep UP || exit 1"
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
 
 # rinha API 2
   javinha2:
@@ -71,12 +94,30 @@ services:
       - REDIS_PORT=6379
       - PAYMENT_DEFAULT_SERVER=http://payment-processor-default:8080
       - PAYMENT_FALLBACK_SERVER=http://payment-processor-fallback:8080
-      - JAVA_TOOL_OPTIONS=-Xmx120m -Xms50m -XX:+UseSerialGC -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40 -XX:NewRatio=3 -XX:+UseStringDeduplication -XX:MaxMetaspaceSize=30m -XX:CompressedClassSpaceSize=8m -XX:+DisableExplicitGC -Djava.util.concurrent.ForkJoinPool.common.parallelism=2
+      - JAVA_OPTS= >-
+          -XX:+UseContainerSupport
+          -XX:MaxRAMPercentage=70.0
+          -XX:InitialRAMPercentage=70.0
+          -XX:MaxMetaspaceSize=32m
+          -Xss256k
+          -XX:+UseSerialGC
+          -XX:+UseFastAccessorMethods
+          -XX:+DisableExplicitGC
+          -XX:-PrintGC
+          -XX:-PrintGCDetails
+          -XX:-FlightRecorder
+          -Xlog:disable
     deploy:
       resources:
         limits:
           cpus: "0.55"
-          memory: "150MB"
+          memory: "146MB"
+    healthcheck:
+      test: "curl --fail --silent localhost:8082/health | grep UP || exit 1"
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
 
   # rinha LB
   nginx:
@@ -100,7 +141,7 @@ services:
       resources:
         limits:
           cpus: "0.2"
-          memory: "20MB"
+          memory: "28MB"
 
 networks:
   back-end:

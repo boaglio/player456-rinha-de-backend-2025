@@ -1,20 +1,20 @@
-package com.boaglio.player456;
+package com.boaglio.player456.old;
 
+import com.boaglio.player456.PaymentRedisRepository;
+import com.boaglio.player456.PaymentRepository;
+import com.boaglio.player456.dto.PaymentRetry;
+import com.boaglio.player456.PaymentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Objects;
 
-import static com.boaglio.player456.Player456Application.RETRY_RATE_IN_MS;
-
 @Service
-@EnableScheduling
+//@EnableScheduling
 public class RetryPaymentService {
 
     private static final Logger logger = LoggerFactory.getLogger(RetryPaymentService.class);
@@ -30,7 +30,7 @@ public class RetryPaymentService {
     @Value("${ENABLE_SCHEDULING:false}")
     private boolean enableScheduling;
 
-    @Scheduled(fixedRate = RETRY_RATE_IN_MS)
+//    @Scheduled(fixedRate = RETRY_RATE_IN_MS)
     @Transactional
     public void checkPaymentsForRetry() {
 

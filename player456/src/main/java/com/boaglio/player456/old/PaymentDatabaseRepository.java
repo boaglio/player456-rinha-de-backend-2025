@@ -1,12 +1,6 @@
-package com.boaglio.player456;
+package com.boaglio.player456.old;
 
 import org.springframework.stereotype.Repository;
-
-import java.sql.Types;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeParseException;
-import java.util.List;
-import java.util.Objects;
 
 @Repository
 public class PaymentDatabaseRepository

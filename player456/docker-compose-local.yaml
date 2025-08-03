@@ -10,8 +10,8 @@ services:
     image: redis:7.2
     container_name: javinha-redis
     hostname: javinha-redis
-    environment:
-      - REDIS_PASSWORD=rinha
+#    environment:
+#      - REDIS_PASSWORD=rinha
     ports:
       - "6379:6379"
     volumes:
