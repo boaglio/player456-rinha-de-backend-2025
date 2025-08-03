@@ -1,0 +1,22 @@
+meta {
+  name: get payments summary sem to
+  type: http
+  seq: 14
+}
+
+get {
+  url: http://localhost:9999/payments-summary?from=2025-06-09T13:48:36.5418Z
+  body: none
+  auth: none
+}
+
+params:query {
+  from: 2025-06-09T13:48:36.5418Z
+}
+
+body:json {
+  {
+    "correlationId": "4a7901b8-7d26-4d9d-aa19-4dc1c7cf60b3",
+    "amount": 19.90
+  }
+}

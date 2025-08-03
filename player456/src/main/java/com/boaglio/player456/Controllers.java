@@ -13,6 +13,7 @@ import reactor.netty.FutureMono;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Objects;
 
 import static com.boaglio.player456.util.LogUtil.log;
 
@@ -45,8 +46,17 @@ public class Controllers {
 
     @GetMapping("/payments-summary")
     public ResponseEntity<String> resumoPagamentos(
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime from,
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime to) {
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime from,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime to) {
+
+        log("- Payments Summary PARAM - from:%s to:%s".formatted(from,to));
+        if (Objects.isNull(from)) {
+            from = LocalDateTime.now();
+        }
+
+        if (Objects.isNull(to)) {
+            to = LocalDateTime.now();
+        }
 
         if (from.isAfter(to)) {
             throw new IllegalArgumentException("'from' date must be before 'to' date");
