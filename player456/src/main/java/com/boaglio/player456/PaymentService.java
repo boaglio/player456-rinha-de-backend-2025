@@ -3,14 +3,17 @@ package com.boaglio.player456;
 import com.boaglio.player456.dto.PaymentRecord;
 import com.boaglio.player456.dto.PaymentSummary;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.concurrent.Future;
 
 import static com.boaglio.player456.util.LogUtil.*;
 import static com.boaglio.player456.Player456Application.*;
@@ -18,21 +21,25 @@ import static com.boaglio.player456.Player456Application.*;
 @Service
 public class PaymentService {
 
+    private URI URI_PAYMENTS;
+
     @Value("${payment.default}")
     private String paymentDefaultServer;
 
     private final PaymentRepository paymentRepository;
-    private final WebClient restClientPaymentDefault;
+    private final WebClient webClient;
 
-    public PaymentService(PaymentRedisRepository paymentRepository ) {
+    public PaymentService(PaymentRedisRepository paymentRepository ) throws URISyntaxException {
         this.paymentRepository = paymentRepository;
-        this.restClientPaymentDefault = WebClient.create();
+        this.webClient = WebClient.builder()
+                .baseUrl(paymentDefaultServer)
+                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+                .build();
+        URI_PAYMENTS = new URI("/payments");
     }
 
-//    @Async
-    public Future<Void> processaPagamento(String correlationId, String amount) {
+    public void processaPagamento(String correlationId, String amount) {
 
-        Future<Void> future = null;
         // Create JSON request body
         String req = """
                 {
@@ -41,21 +48,22 @@ public class PaymentService {
                 }
                 """.formatted(correlationId, amount);
 
-        try {
-            restClientPaymentDefault.post()
-                    .uri(new URI(paymentDefaultServer + "/payments"))
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .bodyValue(req)
-                    .retrieve()
-                    .bodyToMono(String.class)
-                    .retry(RETRY_TIMES);
-            paymentRepository.addDefaultPayment(amount);
-        } catch (Exception e) {
-            logError("Default server request failed: %s".formatted(e.getMessage()));
-            return future;
-        }
+        webClient.post()
+                .uri(paymentDefaultServer+URI_PAYMENTS)
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(req)
+                .retrieve()
+                .onStatus(HttpStatusCode::isError,
+                        response -> response.bodyToMono(String.class)
+                                .flatMap(errorBody -> Mono.error(new RuntimeException("Payment failed: " + errorBody)))
+                )
+                .toBodilessEntity()
+                .then()
+                .doOnSuccess(unused -> paymentRepository.addDefaultPayment(amount))
+                .doOnError(e -> logError("Default server request failed: " + e.getMessage()))
+                .retry(RETRY_TIMES)
+                .subscribe();
 
-        return future;
     }
 
     public PaymentSummary getSummary(LocalDateTime from, LocalDateTime to) {

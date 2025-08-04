@@ -34,7 +34,7 @@ services:
 
   # rinha API 1
   javinha1: &api
-    image: docker.io/boaglio/player456:v2
+    image: docker.io/boaglio/player456:v3
 #    image: docker.io/boaglio/player456:latest
 #    image: docker.io/library/player456:1.0.0-SNAPSHOT
     hostname: javinha1
