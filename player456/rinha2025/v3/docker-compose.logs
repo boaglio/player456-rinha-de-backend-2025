@@ -1,0 +1,482 @@
+
+ javinha1 Pulling 
+ javinha2 Pulling 
+ nginx Pulling 
+ javinha-redis Pulling 
+ fcd0e4a741ed Pulling fs layer 
+ 814b668635b7 Pulling fs layer 
+ 508b23e14b60 Pulling fs layer 
+ cc1f6c2d7a8a Pulling fs layer 
+ 3fe8ccff17fa Pulling fs layer 
+ a222ee4e5b21 Pulling fs layer 
+ a01b808a9561 Pulling fs layer 
+ ae9c404460c0 Pulling fs layer 
+ e06eeb77f854 Pulling fs layer 
+ af6ada8033b5 Pulling fs layer 
+ a01b808a9561 Waiting 
+ ae9c404460c0 Waiting 
+ cc1f6c2d7a8a Waiting 
+ 3fe8ccff17fa Waiting 
+ e06eeb77f854 Waiting 
+ a222ee4e5b21 Waiting 
+ af6ada8033b5 Waiting 
+ fcd0e4a741ed Pulling fs layer 
+ 814b668635b7 Pulling fs layer 
+ 508b23e14b60 Pulling fs layer 
+ cc1f6c2d7a8a Pulling fs layer 
+ 3fe8ccff17fa Pulling fs layer 
+ a222ee4e5b21 Pulling fs layer 
+ a01b808a9561 Pulling fs layer 
+ ae9c404460c0 Pulling fs layer 
+ e06eeb77f854 Pulling fs layer 
+ af6ada8033b5 Pulling fs layer 
+ af6ada8033b5 Waiting 
+ 3fe8ccff17fa Waiting 
+ cc1f6c2d7a8a Waiting 
+ a01b808a9561 Waiting 
+ a222ee4e5b21 Waiting 
+ ae9c404460c0 Waiting 
+ e06eeb77f854 Waiting 
+ 814b668635b7 Download complete 
+ 814b668635b7 Download complete 
+ 508b23e14b60 Downloading [==================================================>]     428B/428B
+ 508b23e14b60 Verifying Checksum 
+ 508b23e14b60 Download complete 
+ 508b23e14b60 Downloading [==================================================>]     428B/428B
+ 508b23e14b60 Verifying Checksum 
+ 508b23e14b60 Download complete 
+ 0368fd46e3c6 Already exists 
+ fcd0e4a741ed Downloading [>                                                  ]  99.35kB/9.681MB
+ fcd0e4a741ed Downloading [>                                                  ]  99.35kB/9.681MB
+ 4e225d7a935a Already exists 
+ 74ab898fdb32 Pulling fs layer 
+ 311eca34042e Pulling fs layer 
+ bb1131de5e60 Pulling fs layer 
+ 407621d26c3b Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 87acabadf81b Pulling fs layer 
+ 311eca34042e Waiting 
+ 4f4fb700ef54 Waiting 
+ bb1131de5e60 Waiting 
+ 87acabadf81b Waiting 
+ 407621d26c3b Waiting 
+ 74ab898fdb32 Waiting 
+ fcd0e4a741ed Downloading [===============================================>   ]  9.155MB/9.681MB
+ fcd0e4a741ed Downloading [===============================================>   ]  9.155MB/9.681MB
+ fcd0e4a741ed Download complete 
+ fcd0e4a741ed Verifying Checksum 
+ fcd0e4a741ed Download complete 
+ fcd0e4a741ed Extracting [>                                                  ]   98.3kB/9.681MB
+ fcd0e4a741ed Extracting [>                                                  ]   98.3kB/9.681MB
+ fcd0e4a741ed Extracting [=========>                                         ]  1.868MB/9.681MB
+ fcd0e4a741ed Extracting [=========>                                         ]  1.868MB/9.681MB
+ 9824c27679d3 Already exists 
+ fcd0e4a741ed Extracting [==================================>                ]  6.685MB/9.681MB
+ fcd0e4a741ed Extracting [==================================>                ]  6.685MB/9.681MB
+ a5585638209e Already exists 
+ fd372c3c84a2 Already exists 
+ 958a74d6a238 Already exists 
+ c1d2dc189e38 Already exists 
+ cc1f6c2d7a8a Downloading [>                                                  ]  19.96kB/1.945MB
+ cc1f6c2d7a8a Downloading [>                                                  ]  19.96kB/1.945MB
+ 828fa206d77b Already exists 
+ 3fe8ccff17fa Downloading [==================================================>]     276B/276B
+ 3fe8ccff17fa Verifying Checksum 
+ 3fe8ccff17fa Download complete 
+ 3fe8ccff17fa Download complete 
+ bdaad27fd04a Already exists 
+ cc1f6c2d7a8a Verifying Checksum 
+ cc1f6c2d7a8a Download complete 
+ cc1f6c2d7a8a Download complete 
+ fcd0e4a741ed Extracting [==================================================>]  9.681MB/9.681MB
+ fcd0e4a741ed Extracting [==================================================>]  9.681MB/9.681MB
+ a222ee4e5b21 Downloading [>                                                  ]  2.302kB/118.8kB
+ a222ee4e5b21 Downloading [>                                                  ]  2.302kB/118.8kB
+ a222ee4e5b21 Downloading [==================================================>]  118.8kB/118.8kB
+ a222ee4e5b21 Verifying Checksum 
+ a222ee4e5b21 Download complete 
+ a222ee4e5b21 Download complete 
+ fcd0e4a741ed Pull complete 
+ fcd0e4a741ed Pull complete 
+ 814b668635b7 Extracting [==================================================>]     304B/304B
+ 814b668635b7 Extracting [==================================================>]     304B/304B
+ 814b668635b7 Extracting [==================================================>]     304B/304B
+ 814b668635b7 Extracting [==================================================>]     304B/304B
+ 814b668635b7 Pull complete 
+ 814b668635b7 Pull complete 
+ 508b23e14b60 Extracting [==================================================>]     428B/428B
+ 508b23e14b60 Extracting [==================================================>]     428B/428B
+ 508b23e14b60 Extracting [==================================================>]     428B/428B
+ 508b23e14b60 Extracting [==================================================>]     428B/428B
+ 508b23e14b60 Pull complete 
+ 508b23e14b60 Pull complete 
+ cc1f6c2d7a8a Extracting [>                                                  ]  32.77kB/1.945MB
+ cc1f6c2d7a8a Extracting [>                                                  ]  32.77kB/1.945MB
+ cc1f6c2d7a8a Extracting [==================================================>]  1.945MB/1.945MB
+ cc1f6c2d7a8a Extracting [==================================================>]  1.945MB/1.945MB
+ cc1f6c2d7a8a Pull complete 
+ cc1f6c2d7a8a Pull complete 
+ ae9c404460c0 Downloading [>                                                  ]  13.11kB/1.198MB
+ ae9c404460c0 Downloading [>                                                  ]  13.11kB/1.198MB
+ 3fe8ccff17fa Extracting [==================================================>]     276B/276B
+ 3fe8ccff17fa Extracting [==================================================>]     276B/276B
+ 3fe8ccff17fa Extracting [==================================================>]     276B/276B
+ 3fe8ccff17fa Extracting [==================================================>]     276B/276B
+ ae9c404460c0 Download complete 
+ ae9c404460c0 Download complete 
+ nginx Pulled 
+ e06eeb77f854 Verifying Checksum 
+ e06eeb77f854 Download complete 
+ e06eeb77f854 Downloading [==================================================>]     595B/595B
+ e06eeb77f854 Verifying Checksum 
+ e06eeb77f854 Download complete 
+ 3fe8ccff17fa Pull complete 
+ 3fe8ccff17fa Pull complete 
+ a222ee4e5b21 Extracting [=============>                                     ]  32.77kB/118.8kB
+ a222ee4e5b21 Extracting [=============>                                     ]  32.77kB/118.8kB
+ a222ee4e5b21 Extracting [==================================================>]  118.8kB/118.8kB
+ a222ee4e5b21 Extracting [==================================================>]  118.8kB/118.8kB
+ a222ee4e5b21 Pull complete 
+ a222ee4e5b21 Pull complete 
+ af6ada8033b5 Download complete 
+ af6ada8033b5 Download complete 
+ 74ab898fdb32 Downloading [>                                                  ]  2.416kB/173.2kB
+ 74ab898fdb32 Verifying Checksum 
+ 74ab898fdb32 Download complete 
+ 74ab898fdb32 Extracting [=========>                                         ]  32.77kB/173.2kB
+ 74ab898fdb32 Extracting [==================================================>]  173.2kB/173.2kB
+ 74ab898fdb32 Extracting [==================================================>]  173.2kB/173.2kB
+ 74ab898fdb32 Pull complete 
+ 311eca34042e Downloading [>                                                  ]  10.95kB/1.003MB
+ 311eca34042e Verifying Checksum 
+ 311eca34042e Download complete 
+ 311eca34042e Extracting [=>                                                 ]  32.77kB/1.003MB
+ 311eca34042e Extracting [==================================================>]  1.003MB/1.003MB
+ 311eca34042e Extracting [==================================================>]  1.003MB/1.003MB
+ 311eca34042e Pull complete 
+ bb1131de5e60 Downloading [>                                                  ]  122.9kB/12.01MB
+ bb1131de5e60 Downloading [=======================================>           ]  9.548MB/12.01MB
+ bb1131de5e60 Verifying Checksum 
+ bb1131de5e60 Download complete 
+ bb1131de5e60 Extracting [>                                                  ]  131.1kB/12.01MB
+ bb1131de5e60 Extracting [====>                                              ]   1.18MB/12.01MB
+ bb1131de5e60 Extracting [====================================>              ]  8.651MB/12.01MB
+ bb1131de5e60 Extracting [==================================================>]  12.01MB/12.01MB
+ bb1131de5e60 Pull complete 
+ a01b808a9561 Downloading [>                                                  ]  460.7kB/45.96MB
+ a01b808a9561 Downloading [>                                                  ]  460.7kB/45.96MB
+ 4f4fb700ef54 Downloading [==================================================>]      32B/32B
+ 4f4fb700ef54 Verifying Checksum 
+ 4f4fb700ef54 Download complete 
+ 407621d26c3b Downloading [==================================================>]      99B/99B
+ 407621d26c3b Verifying Checksum 
+ 407621d26c3b Download complete 
+ 407621d26c3b Extracting [==================================================>]      99B/99B
+ 407621d26c3b Extracting [==================================================>]      99B/99B
+ 407621d26c3b Pull complete 
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ a01b808a9561 Downloading [==>                                                ]  1.845MB/45.96MB
+ a01b808a9561 Downloading [==>                                                ]  1.845MB/45.96MB
+ 4f4fb700ef54 Pull complete 
+ a01b808a9561 Downloading [====>                                              ]  4.167MB/45.96MB
+ a01b808a9561 Downloading [====>                                              ]  4.167MB/45.96MB
+ a01b808a9561 Downloading [======>                                            ]  5.576MB/45.96MB
+ a01b808a9561 Downloading [======>                                            ]  5.576MB/45.96MB
+ a01b808a9561 Downloading [=======>                                           ]  6.501MB/45.96MB
+ a01b808a9561 Downloading [=======>                                           ]  6.501MB/45.96MB
+ 87acabadf81b Downloading [==================================================>]     573B/573B
+ 87acabadf81b Verifying Checksum 
+ 87acabadf81b Download complete 
+ 87acabadf81b Extracting [==================================================>]     573B/573B
+ 87acabadf81b Extracting [==================================================>]     573B/573B
+ 87acabadf81b Pull complete 
+ a01b808a9561 Downloading [=========>                                         ]  8.824MB/45.96MB
+ a01b808a9561 Downloading [=========>                                         ]  8.824MB/45.96MB
+ javinha-redis Pulled 
+ a01b808a9561 Downloading [==========>                                        ]  9.749MB/45.96MB
+ a01b808a9561 Downloading [==========>                                        ]  9.749MB/45.96MB
+ a01b808a9561 Downloading [=============>                                     ]  12.06MB/45.96MB
+ a01b808a9561 Downloading [=============>                                     ]  12.06MB/45.96MB
+ a01b808a9561 Downloading [===============>                                   ]  13.93MB/45.96MB
+ a01b808a9561 Downloading [===============>                                   ]  13.93MB/45.96MB
+ a01b808a9561 Downloading [=================>                                 ]   15.8MB/45.96MB
+ a01b808a9561 Downloading [=================>                                 ]   15.8MB/45.96MB
+ a01b808a9561 Downloading [===================>                               ]  18.11MB/45.96MB
+ a01b808a9561 Downloading [===================>                               ]  18.11MB/45.96MB
+ a01b808a9561 Downloading [====================>                              ]  19.04MB/45.96MB
+ a01b808a9561 Downloading [====================>                              ]  19.04MB/45.96MB
+ a01b808a9561 Downloading [========================>                          ]   22.3MB/45.96MB
+ a01b808a9561 Downloading [========================>                          ]   22.3MB/45.96MB
+ a01b808a9561 Downloading [==========================>                        ]  24.63MB/45.96MB
+ a01b808a9561 Downloading [==========================>                        ]  24.63MB/45.96MB
+ a01b808a9561 Downloading [===========================>                       ]  25.55MB/45.96MB
+ a01b808a9561 Downloading [===========================>                       ]  25.55MB/45.96MB
+ a01b808a9561 Downloading [=============================>                     ]  27.41MB/45.96MB
+ a01b808a9561 Downloading [=============================>                     ]  27.41MB/45.96MB
+ a01b808a9561 Downloading [================================>                  ]  29.74MB/45.96MB
+ a01b808a9561 Downloading [================================>                  ]  29.74MB/45.96MB
+ a01b808a9561 Downloading [===================================>               ]  32.99MB/45.96MB
+ a01b808a9561 Downloading [===================================>               ]  32.99MB/45.96MB
+ a01b808a9561 Downloading [======================================>            ]  35.33MB/45.96MB
+ a01b808a9561 Downloading [======================================>            ]  35.33MB/45.96MB
+ a01b808a9561 Downloading [=========================================>         ]  38.13MB/45.96MB
+ a01b808a9561 Downloading [=========================================>         ]  38.13MB/45.96MB
+ a01b808a9561 Downloading [===========================================>       ]     40MB/45.96MB
+ a01b808a9561 Downloading [===========================================>       ]     40MB/45.96MB
+ a01b808a9561 Downloading [==============================================>    ]  42.32MB/45.96MB
+ a01b808a9561 Downloading [==============================================>    ]  42.32MB/45.96MB
+ a01b808a9561 Downloading [===============================================>   ]  43.71MB/45.96MB
+ a01b808a9561 Downloading [===============================================>   ]  43.71MB/45.96MB
+ a01b808a9561 Verifying Checksum 
+ a01b808a9561 Download complete 
+ a01b808a9561 Verifying Checksum 
+ a01b808a9561 Download complete 
+ a01b808a9561 Extracting [>                                                  ]  491.5kB/45.96MB
+ a01b808a9561 Extracting [>                                                  ]  491.5kB/45.96MB
+ a01b808a9561 Extracting [======>                                            ]   6.39MB/45.96MB
+ a01b808a9561 Extracting [======>                                            ]   6.39MB/45.96MB
+ a01b808a9561 Extracting [=============>                                     ]  12.29MB/45.96MB
+ a01b808a9561 Extracting [=============>                                     ]  12.29MB/45.96MB
+ a01b808a9561 Extracting [===================>                               ]  17.69MB/45.96MB
+ a01b808a9561 Extracting [===================>                               ]  17.69MB/45.96MB
+ a01b808a9561 Extracting [==========================>                        ]  24.08MB/45.96MB
+ a01b808a9561 Extracting [==========================>                        ]  24.08MB/45.96MB
+ a01b808a9561 Extracting [=================================>                 ]  30.47MB/45.96MB
+ a01b808a9561 Extracting [=================================>                 ]  30.47MB/45.96MB
+ a01b808a9561 Extracting [=====================================>             ]  34.41MB/45.96MB
+ a01b808a9561 Extracting [=====================================>             ]  34.41MB/45.96MB
+ a01b808a9561 Extracting [================================================>  ]  44.73MB/45.96MB
+ a01b808a9561 Extracting [================================================>  ]  44.73MB/45.96MB
+ a01b808a9561 Extracting [==================================================>]  45.96MB/45.96MB
+ a01b808a9561 Extracting [==================================================>]  45.96MB/45.96MB
+ a01b808a9561 Pull complete 
+ a01b808a9561 Pull complete 
+ ae9c404460c0 Extracting [=>                                                 ]  32.77kB/1.198MB
+ ae9c404460c0 Extracting [=>                                                 ]  32.77kB/1.198MB
+ ae9c404460c0 Extracting [==================================================>]  1.198MB/1.198MB
+ ae9c404460c0 Extracting [==================================================>]  1.198MB/1.198MB
+ ae9c404460c0 Extracting [==================================================>]  1.198MB/1.198MB
+ ae9c404460c0 Extracting [==================================================>]  1.198MB/1.198MB
+ ae9c404460c0 Pull complete 
+ ae9c404460c0 Pull complete 
+ e06eeb77f854 Extracting [==================================================>]     595B/595B
+ e06eeb77f854 Extracting [==================================================>]     595B/595B
+ e06eeb77f854 Extracting [==================================================>]     595B/595B
+ e06eeb77f854 Extracting [==================================================>]     595B/595B
+ e06eeb77f854 Pull complete 
+ e06eeb77f854 Pull complete 
+ af6ada8033b5 Extracting [==================================================>]     217B/217B
+ af6ada8033b5 Extracting [==================================================>]     217B/217B
+ af6ada8033b5 Extracting [==================================================>]     217B/217B
+ af6ada8033b5 Extracting [==================================================>]     217B/217B
+ af6ada8033b5 Pull complete 
+ af6ada8033b5 Pull complete 
+ javinha2 Pulled 
+ javinha1 Pulled 
+ Network rinha-de-backend-3_back-end  Creating
+ Network rinha-de-backend-3_back-end  Created
+ Container javinha-redis  Creating
+ Container javinha-redis  Created
+ Container javinha2  Creating
+ Container javinha1  Creating
+ Container javinha1  Created
+ Container javinha2  Created
+ Container javinha-nginx  Creating
+ Container javinha-nginx  Created
+Attaching to javinha-nginx, javinha-redis, javinha1, javinha2
+javinha-redis  | 1:C 04 Aug 2025 13:02:49.338 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+javinha-redis  | 1:C 04 Aug 2025 13:02:49.338 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+javinha-redis  | 1:C 04 Aug 2025 13:02:49.338 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+javinha-redis  | 1:C 04 Aug 2025 13:02:49.338 * Configuration loaded
+javinha-redis  | 1:M 04 Aug 2025 13:02:49.338 * monotonic clock: POSIX clock_gettime
+javinha-redis  | 1:M 04 Aug 2025 13:02:49.339 * Running mode=standalone, port=6379.
+javinha-redis  | 1:M 04 Aug 2025 13:02:49.339 * Server initialized
+javinha-redis  | 1:M 04 Aug 2025 13:02:49.339 * Ready to accept connections tcp
+javinha1       | ──────────────────
+javinha1       | ──▄▄─────▄───▄▄▄▄▄
+javinha1       | ▄▀──▀▄──█─█──█───█
+javinha1       | █────█─█───█─█───█
+javinha1       | ─▀▄▄▀─▐▄▄▄▄▄▌█▄▄▄█
+javinha1       | ──────────────────
+javinha1       | 2025-08-04T13:02:55.213Z  INFO 1 --- [player456] [           main] c.b.player456.Player456Application       : Starting AOT-processed Player456Application using Java 24.0.1 with PID 1 (/workspace/com.boaglio.player456.Player456Application started by cnb in /workspace)
+javinha1       | 2025-08-04T13:02:55.214Z  INFO 1 --- [player456] [           main] c.b.player456.Player456Application       : No active profile set, falling back to 1 default profile: "default"
+javinha1       | 2025-08-04T13:02:55.239Z  INFO 1 --- [player456] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+javinha1       | 2025-08-04T13:02:55.241Z  INFO 1 --- [player456] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+javinha1       | 2025-08-04T13:02:55.241Z  INFO 1 --- [player456] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+javinha2       | ──────────────────
+javinha2       | ──▄▄─────▄───▄▄▄▄▄
+javinha2       | ▄▀──▀▄──█─█──█───█
+javinha2       | █────█─█───█─█───█
+javinha2       | ─▀▄▄▀─▐▄▄▄▄▄▌█▄▄▄█
+javinha2       | ──────────────────
+javinha1       | 2025-08-04T13:02:55.254Z  INFO 1 --- [player456] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+javinha1       | 2025-08-04T13:02:55.254Z  INFO 1 --- [player456] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 40 ms
+javinha2       | 2025-08-04T13:02:55.255Z  INFO 1 --- [player456] [           main] c.b.player456.Player456Application       : Starting AOT-processed Player456Application using Java 24.0.1 with PID 1 (/workspace/com.boaglio.player456.Player456Application started by cnb in /workspace)
+javinha2       | 2025-08-04T13:02:55.255Z  INFO 1 --- [player456] [           main] c.b.player456.Player456Application       : No active profile set, falling back to 1 default profile: "default"
+javinha1       | WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+javinha1       | WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/workspace/com.boaglio.player456.Player456Application)
+javinha1       | WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+javinha1       | WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+javinha1       | WARNING: A restricted method in java.lang.System has been called
+javinha1       | WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (file:/workspace/com.boaglio.player456.Player456Application)
+javinha1       | WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+javinha1       | WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+javinha1       | 
+javinha2       | 2025-08-04T13:02:55.314Z  INFO 1 --- [player456] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+javinha2       | 2025-08-04T13:02:55.315Z  INFO 1 --- [player456] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+javinha2       | 2025-08-04T13:02:55.315Z  INFO 1 --- [player456] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+javinha2       | 2025-08-04T13:02:55.325Z  INFO 1 --- [player456] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+javinha2       | 2025-08-04T13:02:55.325Z  INFO 1 --- [player456] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 70 ms
+javinha2       | WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+javinha2       | WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/workspace/com.boaglio.player456.Player456Application)
+javinha2       | WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+javinha2       | WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+javinha2       | WARNING: A restricted method in java.lang.System has been called
+javinha2       | WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (file:/workspace/com.boaglio.player456.Player456Application)
+javinha2       | WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+javinha2       | WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+javinha2       | 
+javinha1       | 2025-08-04T13:02:55.422Z  INFO 1 --- [player456] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+javinha1       | 2025-08-04T13:02:55.422Z  INFO 1 --- [player456] [           main] c.b.player456.Player456Application       : Started Player456Application in 0.229 seconds (process running for 0.235)
+javinha2       | 2025-08-04T13:02:55.462Z  INFO 1 --- [player456] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+javinha2       | 2025-08-04T13:02:55.463Z  INFO 1 --- [player456] [           main] c.b.player456.Player456Application       : Started Player456Application in 0.23 seconds (process running for 0.235)
+javinha-nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+javinha-nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+javinha-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+javinha-nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+javinha-nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+javinha-nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+javinha-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+javinha-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+javinha-nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+javinha1       | 2025-08-04T13:02:59.332Z  INFO 1 --- [player456] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+javinha1       | 2025-08-04T13:02:59.332Z  INFO 1 --- [player456] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+javinha1       | 2025-08-04T13:02:59.332Z  INFO 1 --- [player456] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+javinha1       | 2025-08-04T13:02:59.333Z  INFO 1 --- [player456] [nio-8081-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-1 - - Payments Summary PARAM - from:null to:null
+javinha1       | 2025-08-04T13:02:59.333Z  INFO 1 --- [player456] [nio-8081-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-1 - 1 - Payments Summary - from:2025-08-04T13:02:59.333515562 to:2025-08-04T13:02:59.333515932
+javinha1       | 2025-08-04T13:02:59.382Z  INFO 1 --- [player456] [nio-8081-exec-1] com.boaglio.player456.util.TimerUtil     : Payment Summary took 48.598 ms
+javinha1       | 2025-08-04T13:02:59.382Z  INFO 1 --- [player456] [nio-8081-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-1 - 1 - Payments Summary Response - {
+javinha1       |     "default" : {
+javinha1       |         "totalRequests": 0,
+javinha1       |         "totalAmount": 0.00
+javinha1       |     },
+javinha1       |     "fallback" : {
+javinha1       |         "totalRequests": 0,
+javinha1       |         "totalAmount": 0.00
+javinha1       |     }
+javinha1       | }
+javinha1       | 
+javinha2       | 2025-08-04T13:03:04.980Z  INFO 1 --- [player456] [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+javinha2       | 2025-08-04T13:03:04.980Z  INFO 1 --- [player456] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+javinha2       | 2025-08-04T13:03:04.981Z  INFO 1 --- [player456] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+javinha1       | 2025-08-04T13:03:04.985Z  INFO 1 --- [player456] [nio-8081-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-3 - - Payments Summary PARAM - from:2025-08-04T13:02:49.983 to:2025-08-04T13:03:03.483
+javinha1       | 2025-08-04T13:03:04.985Z  INFO 1 --- [player456] [nio-8081-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-3 - 2 - Payments Summary - from:2025-08-04T13:02:49.983 to:2025-08-04T13:03:03.483
+javinha1       | 2025-08-04T13:03:04.986Z  INFO 1 --- [player456] [nio-8081-exec-3] com.boaglio.player456.util.TimerUtil     : Payment Summary took 0.483 ms
+javinha1       | 2025-08-04T13:03:04.986Z  INFO 1 --- [player456] [nio-8081-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-3 - 2 - Payments Summary Response - {
+javinha1       |     "default" : {
+javinha1       |         "totalRequests": 0,
+javinha1       |         "totalAmount": 0.00
+javinha1       |     },
+javinha1       |     "fallback" : {
+javinha1       |         "totalRequests": 0,
+javinha1       |         "totalAmount": 0.00
+javinha1       |     }
+javinha1       | }
+javinha1       | 
+javinha1       | 2025-08-04T13:03:14.991Z  INFO 1 --- [player456] [nio-8081-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-3 - - Payments Summary PARAM - from:2025-08-04T13:02:59.989 to:2025-08-04T13:03:13.489
+javinha1       | 2025-08-04T13:03:14.991Z  INFO 1 --- [player456] [nio-8081-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-3 - 3 - Payments Summary - from:2025-08-04T13:02:59.989 to:2025-08-04T13:03:13.489
+javinha1       | 2025-08-04T13:03:14.995Z  INFO 1 --- [player456] [nio-8081-exec-3] com.boaglio.player456.util.TimerUtil     : Payment Summary took 4.234 ms
+javinha1       | 2025-08-04T13:03:14.995Z  INFO 1 --- [player456] [nio-8081-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-3 - 3 - Payments Summary Response - {
+javinha1       |     "default" : {
+javinha1       |         "totalRequests": 417,
+javinha1       |         "totalAmount": 8298.30
+javinha1       |     },
+javinha1       |     "fallback" : {
+javinha1       |         "totalRequests": 0,
+javinha1       |         "totalAmount": 0.00
+javinha1       |     }
+javinha1       | }
+javinha1       | 
+javinha2       | 2025-08-04T13:03:24.998Z  INFO 1 --- [player456] [nio-8082-exec-4] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-4 - - Payments Summary PARAM - from:2025-08-04T13:03:09.996 to:2025-08-04T13:03:23.496
+javinha2       | 2025-08-04T13:03:24.998Z  INFO 1 --- [player456] [nio-8082-exec-4] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-4 - 1 - Payments Summary - from:2025-08-04T13:03:09.996 to:2025-08-04T13:03:23.496
+javinha2       | 2025-08-04T13:03:25.017Z  INFO 1 --- [player456] [nio-8082-exec-4] com.boaglio.player456.util.TimerUtil     : Payment Summary took 19.138 ms
+javinha2       | 2025-08-04T13:03:25.017Z  INFO 1 --- [player456] [nio-8082-exec-4] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-4 - 1 - Payments Summary Response - {
+javinha2       |     "default" : {
+javinha2       |         "totalRequests": 1636,
+javinha2       |         "totalAmount": 32556.40
+javinha2       |     },
+javinha2       |     "fallback" : {
+javinha2       |         "totalRequests": 0,
+javinha2       |         "totalAmount": 0.00
+javinha2       |     }
+javinha2       | }
+javinha2       | 
+javinha2       | 2025-08-04T13:03:35.019Z  INFO 1 --- [player456] [nio-8082-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-1 - - Payments Summary PARAM - from:2025-08-04T13:03:20.018 to:2025-08-04T13:03:33.518
+javinha2       | 2025-08-04T13:03:35.019Z  INFO 1 --- [player456] [nio-8082-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-1 - 2 - Payments Summary - from:2025-08-04T13:03:20.018 to:2025-08-04T13:03:33.518
+javinha2       | 2025-08-04T13:03:35.039Z  INFO 1 --- [player456] [nio-8082-exec-1] com.boaglio.player456.util.TimerUtil     : Payment Summary took 19.237 ms
+javinha2       | 2025-08-04T13:03:35.039Z  INFO 1 --- [player456] [nio-8082-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-1 - 2 - Payments Summary Response - {
+javinha2       |     "default" : {
+javinha2       |         "totalRequests": 2873,
+javinha2       |         "totalAmount": 57172.70
+javinha2       |     },
+javinha2       |     "fallback" : {
+javinha2       |         "totalRequests": 0,
+javinha2       |         "totalAmount": 0.00
+javinha2       |     }
+javinha2       | }
+javinha2       | 
+javinha1       | 2025-08-04T13:03:45.041Z  INFO 1 --- [player456] [nio-8081-exec-4] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-4 - - Payments Summary PARAM - from:2025-08-04T13:03:30.040 to:2025-08-04T13:03:43.540
+javinha1       | 2025-08-04T13:03:45.041Z  INFO 1 --- [player456] [nio-8081-exec-4] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-4 - 4 - Payments Summary - from:2025-08-04T13:03:30.040 to:2025-08-04T13:03:43.540
+javinha1       | 2025-08-04T13:03:45.107Z  INFO 1 --- [player456] [nio-8081-exec-4] com.boaglio.player456.util.TimerUtil     : Payment Summary took 65.09 ms
+javinha1       | 2025-08-04T13:03:45.107Z  INFO 1 --- [player456] [nio-8081-exec-4] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-4 - 4 - Payments Summary Response - {
+javinha1       |     "default" : {
+javinha1       |         "totalRequests": 3481,
+javinha1       |         "totalAmount": 69271.90
+javinha1       |     },
+javinha1       |     "fallback" : {
+javinha1       |         "totalRequests": 0,
+javinha1       |         "totalAmount": 0.00
+javinha1       |     }
+javinha1       | }
+javinha1       | 
+javinha1       | 2025-08-04T13:03:55.108Z  INFO 1 --- [player456] [nio-8081-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-1 - - Payments Summary PARAM - from:2025-08-04T13:03:40.107 to:2025-08-04T13:03:53.607
+javinha1       | 2025-08-04T13:03:55.108Z  INFO 1 --- [player456] [nio-8081-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-1 - 5 - Payments Summary - from:2025-08-04T13:03:40.107 to:2025-08-04T13:03:53.607
+javinha1       | 2025-08-04T13:03:55.230Z  INFO 1 --- [player456] [nio-8081-exec-1] com.boaglio.player456.util.TimerUtil     : Payment Summary took 121.483 ms
+javinha1       | 2025-08-04T13:03:55.230Z  INFO 1 --- [player456] [nio-8081-exec-1] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8081-exec-1 - 5 - Payments Summary Response - {
+javinha1       |     "default" : {
+javinha1       |         "totalRequests": 6065,
+javinha1       |         "totalAmount": 120693.50
+javinha1       |     },
+javinha1       |     "fallback" : {
+javinha1       |         "totalRequests": 0,
+javinha1       |         "totalAmount": 0.00
+javinha1       |     }
+javinha1       | }
+javinha1       | 
+javinha2       | 2025-08-04T13:04:05.991Z  INFO 1 --- [player456] [nio-8082-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-3 - - Payments Summary PARAM - from:2025-08-04T13:02:55.985 to:2025-08-04T13:04:05.985
+javinha2       | 2025-08-04T13:04:05.991Z  INFO 1 --- [player456] [nio-8082-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-3 - 3 - Payments Summary - from:2025-08-04T13:02:55.985 to:2025-08-04T13:04:05.985
+javinha2       | 2025-08-04T13:04:06.213Z  INFO 1 --- [player456] [nio-8082-exec-3] com.boaglio.player456.util.TimerUtil     : Payment Summary took 222.112 ms
+javinha2       | 2025-08-04T13:04:06.213Z  INFO 1 --- [player456] [nio-8082-exec-3] com.boaglio.player456.util.LogUtil       : Thread:http-nio-8082-exec-3 - 3 - Payments Summary Response - {
+javinha2       |     "default" : {
+javinha2       |         "totalRequests": 16607,
+javinha2       |         "totalAmount": 330479.29
+javinha2       |     },
+javinha2       |     "fallback" : {
+javinha2       |         "totalRequests": 0,
+javinha2       |         "totalAmount": 0.00
+javinha2       |     }
+javinha2       | }
+javinha2       | 
+[Kjavinha-nginx exited with code 0
+javinha1       | 2025-08-04T13:04:07.014Z  INFO 1 --- [player456] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+javinha1       | 2025-08-04T13:04:07.015Z  INFO 1 --- [player456] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+javinha2       | 2025-08-04T13:04:07.016Z  INFO 1 --- [player456] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+javinha2       | 2025-08-04T13:04:07.018Z  INFO 1 --- [player456] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+[Kjavinha1 exited with code 143
+[Kjavinha2 exited with code 143
+javinha-redis  | 1:signal-handler (1754312649) Received SIGTERM scheduling shutdown...
+javinha-redis  | 1:M 04 Aug 2025 13:04:09.718 * User requested shutdown...
+javinha-redis  | 1:M 04 Aug 2025 13:04:09.718 # Redis is now ready to exit, bye bye...
+[Kjavinha-redis exited with code 0
+log truncated at line 1000
